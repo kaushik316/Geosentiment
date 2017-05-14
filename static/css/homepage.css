@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+html {
+	background-size: cover;
+	background-image: url("http://nolaprinthouse.com/wp-content/uploads/2014/04/map-contact.jpg");
+	position: relative;
+}
+
+body {
+	text-align: center;
+	font-family: 'Lato';
+	color: white;	
+	background-color: rgba(0,105,250,0.55);;
+    width: 100%;
+    background-size: 100%;
+    z-index: 1;
+    height: 100%;
+    padding-bottom: 10px;
+    position: fixed;
+}
+
+.filter {
+
+}
+
+.content {
+	z-index: 2;
+	position: relative;
+}
+
+.container-fluid {
+	margin: auto;
+}
+
+.header {
+	margin-top:10%;
+}
+
+.title {
+	font-size: 55px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.descrip {
+	font-size: 20px;
+	padding-top:5px;
+	padding-bottom: 35px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+input {
+	color: black;
+	padding: 10px;
+	display: inline;
+	border: 1px solid #0D4F8B;
+	border-radius: 0px;
+	box-shadow: 0px 2px 2px black;
+}
+
+#search {
+	background-color: white;
+	color:black;
+	box-shadow: 0px 2px 2px black;
+}
+
+
+
+#loader-wrapper {
+	display: none;
+	background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+    -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+ 
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+
+.btn {
+    margin-top: 20px;
+    box-shadow: 0px 2px 2px black;
+    background-color: white;
+    color:rgba(0,105,250,0.8);
+    border-radius: none;
+    padding: 10px;
+    font-size:13px;
+}
+
+iframe {
+    margin-top: 25px;
+    box-shadow: 0px 2px 2px black;
+}
+

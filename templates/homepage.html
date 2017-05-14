@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Geosentiment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css' ) }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/homepage.css' ) }}" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <div class="filter">
+    </div>
+
+    <div class="content">
+
+        <div class="container-fluid">
+          <div class="header">
+            <p class="title">Geosentiment</p>
+          </div>
+        </div>
+
+        <div id="text" class="container-fluid">
+          <div class="row">
+            <div class="descrip col-md-8 col-md-offset-2">
+              <p class"description">This is a tool that uses natural language processing to measure how Twitter users in different cities feel about certain topics. Get started by searching for a word, person or phrase below!</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <form action="." method="POST">
+              <input id="searchbar" type="text" placeholder="Enter search term" name="topic">
+              <input id="search" type="submit" name="my-form" value="Search">
+            </form>
+          </div>
+        </div> 
+
+        {% block body %}{% endblock %}
+
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+             <h2 class="loadtext"> The elves are preparing your map, please hang on... <h2>
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+        </div>
+
+    </div>
+  </body>
+
+  <script src="{{ url_for('static', filename='js/jquery-1.12.0.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/geosentiment.js') }}"></script>
+</html>
