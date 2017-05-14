@@ -49,7 +49,8 @@ def map_sentiment(searchterm):
 # Set up variables we will used in the plot and sign in to plotly
 py.sign_in('kaushik.316', plotkey)
 sentiment_limits = [(-0.99,-0.75),(-0.75,-0.50),(-0.50,-0.20),(-0.20, -0.01),(0.00,0.20),(0.20,0.50),(0.50,0.75),(0.75,0.99)]
-sentiment_colors = ["rgba(255,65,54,0.9)","rgba(255,65,54,0.7)","rgba(255,65,54,0.5)","rgba(255,65,54,0.2)", "rgba(0,116,217,0.2)","rgba(0,116,217,0.5)","rgba(0,116,217,0.7)","rgba(0,116,217,0.9)"]
+sentiment_colors = ["rgba(255,65,54,0.9)","rgba(255,65,54,0.7)","rgba(255,65,54,0.5)","rgba(255,65,54,0.2)",
+				    "rgba(0,116,217,0.2)","rgba(0,116,217,0.5)","rgba(0,116,217,0.7)","rgba(0,116,217,0.9)"]
 cities = []
 scale = 7000
 
